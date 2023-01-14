@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url(../assets/the-lord-of-the-rings-map-of-middle-earth-i109833.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid rgb(145, 17, 49);
+  background-color: rgba(228, 192, 144, 0.793);
+  margin: 20px 100px;
+  padding: 10px 50px;
+  height: 40vw;
+  width: 30vw;
+  font-family: "Great Vibes", cursive;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid rgb(145, 17, 49);
+  background-color: rgba(228, 192, 144, 0.793);
+  margin: 20px 60px;
+  padding: 10px 50px;
+  height: 55%;
+  width: 35%;
+  font-family: "Great Vibes", cursive;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+} */
+
+/* #info {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  border: 5px solid rgba(145, 17, 49, 0.999);
+  background-color: rgba(228, 192, 144, 0.434);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+  padding: 5px 5px;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  font-family: cursive;
+  border-radius: 5px;
+} */
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  border: 5px solid rgba(145, 17, 49, 0.999);
+  background-color: rgba(228, 192, 144, 0.434);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+  padding: 5px 5px;
+  height: 70vh;
+  width: 22vw;
+  text-align: center;
+  font-family: cursive;
+  border-radius: 5px;
+}
+h3 {
+  margin: 2px;
+  padding: 5px;
+}
+p {
+  margin: 2px;
+  padding: 2px;
+}
+h1 {
+  font-size: 40px;
+}
+.start,
+.reset-button {
+  margin: 10px 100px;
+  padding: 5px;
+  background-color: rgb(208, 190, 111);
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  border: 2px solid rgb(73, 68, 68);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 90vh;
+  width: 80vw;
+  border: solid 1px rgb(92, 85, 85);
+  margin-left: auto;
+  margin-right: 100px;
+  background: linear-gradient(#961816f1, #ae912ae0, #6c6e64f4, #0d8535e4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  border: 5px rgba(145, 17, 49, 0.999);
+}
+
+/* .grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 65%;
+  width: 50%;
+  border: solid 1px rgb(92, 85, 85);
+  margin-left: auto;
+  margin-right: 60px;
+  background: linear-gradient(#961816f1, #ae912ae0, #6c6e64f4, #0d8535e4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  border: 5px rgba(145, 17, 49, 0.999);
+} */
+
+.grid div {
+  border: 1px solid rgba(145, 17, 49, 0.108);
+  flex-grow: 1;
+  height: 10%;
+  width: 11%;
+}
+
+#timer {
+  font-size: 150px;
+}
+
+.lives-remaining {
+  font-size: 30px;
+}
+
+.grid div.marsh {
+  background-color: rgba(102, 117, 74, 0.991);
+}
+
+.grid div.moria-door {
+  background-image: url("../assets/moriadoor3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.grid div.hobbit-hole {
+  background-image: url("../assets/hobbit-hole.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid div.trees {
+  background-image: url("../assets/tree.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.grid div.lava-rock {
+  background-image: url("../assets/lavarock3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.grid div.flying-nazgul {
+  background-image: url("../assets/flyingNazgul.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+.grid div.mordor {
+  background-image: url("../assets/mordor3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid div.face {
+  background-image: url("../assets/marsh.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.grid div.spirit {
+  background-image: url("../assets/deadmarshes.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.grid div.rock {
+  background-image: url("../assets/rock2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.grid div.face {
+  background-image: url("../assets/marsh.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.grid div.reed {
+  background-image: url("../assets/reeds.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.grid div.troll {
+  background-image: url("../assets/troll.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.grid div.orc {
+  background-image: url("../assets/orc2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.grid div.witchking {
+  background-image: url("../assets/witchKing2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.grid div.nazgul {
+  background-image: url("../assets/nazgul2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.grid div.raft {
+  background-image: url("../assets/raft1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.grid div.frodo {
+  background-image: url("../assets/frodo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (min-width: 1850px) and (max-width: 2560px) {
+  h1 {
+    font-size: 50px;
+  }
+  #info {
+    font-size: 20px;
+  }
+  .start,
+  .reset-button {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  h1 {
+    font-size: 30px;
+    margin: 0px;
+  }
+  #info {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .start,
+  .reset-button {
+    font-size: 12px;
+  }
+}

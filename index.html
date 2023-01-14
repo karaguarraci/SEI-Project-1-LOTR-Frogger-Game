@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <title>Journey To Mordor</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src="scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-wrapper">
+      <div class="title">
+        <h1>Journey To Mordor</h1>
+        <div id="info">
+          <div id="instructions">
+            <h3 class="howto">How To Play</h3>
+            <p>
+              A great evil looms! You must help Frodo avoid the evil creatures
+              along the way. When you reach the dead marshes, beware of what
+              lurks in the waters! Can you make it to Mount Doom to destroy the
+              ring? Be quick, because time is running out!<br />
+              Guide Frodo using the arrow keys on your keyboard. To save Middle
+              Earth you must make it to Mount Doom before time runs out!
+            </p>
+          </div>
+          <div id="timer"></div>
+          <button id="startButton" class="start">Start Game</button>
+          <h4 class="lives-remaining"></h4>
+          <audio
+            id="start-theme"
+            src="../Project 1/assets/StartTheme1.mp3"
+            loop
+          ></audio>
+        </div>
+      </div>
+      <div class="grid"></div>
+    </div>
+  </body>
+</html>
