@@ -3,6 +3,8 @@ const text = document.querySelector("#instructions");
 const countDown = document.querySelector("#timer");
 const startButton = document.querySelector("#startButton");
 const themeMusic = document.querySelector("#start-theme");
+const playPauseButton = document.querySelector("#music-controls");
+const livesRemaining = document.querySelector(".lives-remaining");
 const width = 9;
 const numberOfBoxes = 90;
 const boxes = [];
@@ -10,6 +12,7 @@ let currentPosition = 85;
 let currentDirection = "right";
 currentTime = 30;
 let lives = 3;
+let isPlaying = false;
 const deadMarshes = [
   36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
 ];
@@ -332,7 +335,6 @@ const gameEnd = () => {
   }, 200);
 };
 
-const livesRemaining = document.querySelector(".lives-remaining");
 function onClick() {
   timeLeft();
   moveAll();
@@ -342,9 +344,8 @@ function onClick() {
   instructions.innerText = "Hurry! Time is running out!";
   livesRemaining.innerText = "Lives remaining: " + lives;
   countDown.innerHTML = 30;
-
   themeMusic.pause();
-  themeMusic.src = "../Project 1/assets/Main Theme.mp3";
+  themeMusic.src = "../assets/Main Theme.mp3";
   themeMusic.load();
   themeMusic.play();
 }
@@ -376,7 +377,7 @@ function youWin() {
     boxes[currentPosition].classList.add("frodo");
     document.removeEventListener("keyup", onMove);
     themeMusic.pause();
-    themeMusic.src = "../Project 1/assets/WinTheme.mp3";
+    themeMusic.src = "../assets/WinTheme.mp3";
     themeMusic.load();
     themeMusic.play();
     console.log(themeMusic);
@@ -388,17 +389,7 @@ function youWin() {
 }
 
 function youLose() {
-  if (
-    // boxes[currentPosition].classList.contains("nazgul") ||
-    // boxes[currentPosition].classList.contains("troll") ||
-    // (boxes[currentPosition].classList.contains("marsh") &&
-    //   !boxes[currentPosition].classList.contains("raft")) ||
-    // boxes[currentPosition].classList.contains("orc") ||
-    // boxes[currentPosition].classList.contains("witchking") ||
-    // boxes[currentPosition].classList.contains("flying-nazgul") ||
-    currentTime <= 0 ||
-    lives === 0
-  ) {
+  if (currentTime <= 0 || lives === 0) {
     console.log(currentPosition);
     boxes[currentPosition].classList.remove("frodo");
     currentPosition = 85;
@@ -406,7 +397,7 @@ function youLose() {
     document.removeEventListener("keyup", onMove);
     clearInterval(timerId);
     themeMusic.pause();
-    themeMusic.src = "../Project 1/assets/LoseTheme.mp3";
+    themeMusic.src = "../assets/LoseTheme.mp3";
     themeMusic.load();
     themeMusic.play();
     instructions.innerText = "Middle Earth is doomed!";
@@ -429,7 +420,20 @@ function playAgain() {
   lives = 3;
 }
 
-startButton.addEventListener("click", onClick);
+function toggleMusic() {
+  if (isPlaying) {
+    themeMusic.pause();
+    playPauseButton.innerHTML = "&#9658;";
+    isPlaying = false;
+  } else {
+    themeMusic.play();
+    playPauseButton.innerHTML = "||";
+    isPlaying = true;
+    console.log(themeMusic);
+  }
+}
 
+startButton.addEventListener("click", onClick);
+playPauseButton.addEventListener("click", toggleMusic);
 createGrid();
-themeMusic.play();
+// themeMusic.play();

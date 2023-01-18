@@ -151,6 +151,17 @@ h1 {
   font-size: 30px;
 }
 
+#music-controls {
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: rgb(208, 190, 111);
+  border: 2px solid rgb(73, 68, 68);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
 .grid div.marsh {
   background-color: rgba(102, 117, 74, 0.991);
 }
@@ -296,5 +307,8 @@ h1 {
   .start,
   .reset-button {
     font-size: 12px;
+  }
+  .music-controls {
+    padding: px;
   }
 }
