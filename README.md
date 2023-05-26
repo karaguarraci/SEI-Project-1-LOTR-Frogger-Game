@@ -23,7 +23,7 @@ I allocated a large portion of time to focussing on the fundamental features and
 
 After deciding on creating a Lord of the Rings Frogger game, I began planning by considering the game's features and functionality, as well as the styling. To accomplish this, I created a wireframe using Excalidraw. I carefully thought about the various elements I intended to include in the game and the corresponding logic required to implement each feature. Although some aspects were challenging to fully understand during the planning stage, I was able to include them with ongoing research and trial and error during the coding phase.
 
-![Project 1](https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/22c21724-3268-481a-9da7-dd6936ac4cd1)
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/22c21724-3268-481a-9da7-dd6936ac4cd1" alt="project wireframe" width="450">
 
 ## Build/Code Process
 
@@ -113,8 +113,9 @@ function onClick() {
   themeMusic.play();
 }
 ```
- ![How To Play](https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/5cfe93d1-8222-41d5-b536-3c1718b02ee2)
-![unknown](https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/1fe071a2-4f0b-4704-8738-e568c7efcadf)
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/5cfe93d1-8222-41d5-b536-3c1718b02ee2" alt="game screenshot" width="250">
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/1fe071a2-4f0b-4704-8738-e568c7efcadf" alt="game screenshot" width="250">
+
 
 At a certain point, I noticed that the character was not moving with the rafts, causing them to fall into the water and reset. To address this issue, I needed to ensure that Frodo moved with the "raft" class by checking if the current position contains the "raft" class and updating the current position accordingly using an if statement. Specifically, I checked if the raft position contained the "frodo" class and set the current position, represented by Frodo's position, to the next index, represented by the position of the raft. I also removed the "frodo" class from the old position and added it to the new position. This way, Frodo would move along with the rafts and avoid falling into the water:
 
@@ -128,7 +129,7 @@ if (boxes[raftPosition].classList.contains("frodo")) {
 
 I also implemented a "youWin" function to determine when the player reaches the finish point and wins the game. Within this function, I added a condition to check whether the current position contains the "mordor" class, indicating that the player has won. Upon winning, the function changes the background music, updates the text of the start menu, and stops all movement in the game. Additionally, a "Play Again" button appears, allowing the player to restart the game. This button also appears if the player loses the game.
 
-![unknown](https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/8f638797-dc40-4d9a-bada-c2b7eb316a31)
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/8f638797-dc40-4d9a-bada-c2b7eb316a31" alt="game screenshot" width="250">
 
 ### Stretch goals and Styling
 
@@ -151,7 +152,7 @@ Overall, these new features add both difficulty and replay value to the game, ma
 
 ## Finished Product
 
-![unknown](https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/285d9bdc-4fc4-45a0-96d8-fd575eca4ff9)
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/285d9bdc-4fc4-45a0-96d8-fd575eca4ff9" alt="game screenshot" width="450">
 
 ## Challenges
 
