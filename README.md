@@ -158,9 +158,10 @@ Overall, these new features add both difficulty and replay value to the game, ma
 <p align="center">
 <img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/285d9bdc-4fc4-45a0-96d8-fd575eca4ff9" alt="game screenshot" width="450">
 </p>
+<p align="center">
 <img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/b4280e7c-353e-4979-9607-3f322e083500" width="350">
 <img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/79c8ed37-be20-4460-844e-58d873ebfa1c" width="350">
-
+</p>
 ## Challenges
 
 I had several challenges throughout this project that I needed to overcome in order to have a working game. 
