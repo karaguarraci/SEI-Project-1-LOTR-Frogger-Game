@@ -155,8 +155,11 @@ In addition to the countdown timer, I added a ‘lives’ system to the game. Wh
 Overall, these new features add both difficulty and replay value to the game, making it more engaging and challenging for players.
 
 ## Finished Product
-
-<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/285d9bdc-4fc4-45a0-96d8-fd575eca4ff9" alt="game screenshot" width="450">
+<p align="center">
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/285d9bdc-4fc4-45a0-96d8-fd575eca4ff9" alt="game screenshot" width="550">
+</p>
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/b4280e7c-353e-4979-9607-3f322e083500" width="500">
+<img src="https://github.com/karaguarraci/karaguarraci.github.io/assets/115991254/79c8ed37-be20-4460-844e-58d873ebfa1c" width="500">
 
 ## Challenges
 
