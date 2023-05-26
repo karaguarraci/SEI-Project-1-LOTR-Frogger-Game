@@ -15,6 +15,10 @@ You can play the game here: https://karaguarraci.github.io/
 - Include separate HTML / CSS / JavaScript files
 - Deploy your game online
 
+## Timeframe
+
+2 weeks | Solo project
+
 ## Planning
 During planning, I first divided the project into different stages, each with specific objectives. 
 Initially, I spent time planning by creating a wireframe to outline the desired game functionalities and initial thoughts on styling. I then spent the time we had over the holiday researching how to implement these and updating my wireframe. 
