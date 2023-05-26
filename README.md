@@ -1,7 +1,7 @@
 # SEI Project 1 - Frogger Game
 This is the first big project that I have completed. It is a grid-based game developed using HTML, CSS, and JavaScript, modelled on Frogger with a Lord of the Rings theme. In place of a frog, the user will control Frodo and the objective is to navigate him up the grid to Mount Doom using keyboard inputs. The player must avoid enemies that can kill Frodo, resulting in the loss of one of three lives and eventual defeat. Additionally, a thirty-second countdown timer adds to the challenge, ending in defeat if it should reach zero.
 
-You can play the game here: https://karaguarraci.github.io/
+You can play the game [here](https://karaguarraci.github.io/)
 
 ## Tech Stack
 - HTML
